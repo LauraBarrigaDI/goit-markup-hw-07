@@ -1,0 +1,23 @@
+{
+  "name": "goit-markup-hw-07",
+  "version": "1.0.0",
+  "description": "HW7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraBarrigaDI/goit-markup-hw-07.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraBarrigaDI/goit-markup-hw-07/issues"
+  },
+  "homepage": "https://github.com/LauraBarrigaDI/goit-markup-hw-07#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -21,24 +21,24 @@
     <!-- Encabezado de la página -->
     <header>
       <div class="container">
-        <nav class="nav-container">
+        <nav class="nav">
           <!-- Navegación a otros sitios -->
-          <a class="logo" href="/">WebStudio</a>
-          <a class="active-link" href="index.html">Estudio</a>
-          <a class="active-link selected" href="portfolio.html">Portafolio</a>
-          <a class="active-link" href="">Contactos</a>
+          <a class="nav__logo" href="/">WebStudio</a>
+          <a class="nav__link" href="index.html">Estudio</a>
+          <a class="nav__link nav__link--selected" href="portfolio.html">Portafolio</a>
+          <a class="nav__link" href="">Contactos</a>
         </nav>
 
-        <div class="contact-container">
-          <a class="contact-link" href="mailto:info@devstudio.com"
-            ><svg class="icon" width="16" height="16">
+        <div class="header__contact">
+          <a class="header__contact-link" href="mailto:info@devstudio.com"
+            ><svg class="header__contact-icon" width="16" height="16">
               <use href="./images/symbol-defs.svg#icon-mail"></use>
             </svg>
             info@devstudio.com</a
           >
 
-          <a class="contact-link" href="tel:+525555296000">
-            <svg class="icon" width="10" height="16">
+          <a class="header__contact-link" href="tel:+525555296000">
+            <svg class="header__contact-icon" width="10" height="16">
               <use href="./images/symbol-defs.svg#icon-cel"></use>
             </svg>
             +52 55 5529 6000</a
