@@ -21,7 +21,7 @@ body{
 }
 
 .nav__logo{
-    color: $primary-color;
+    color: #2196F3;
     font-family: Raleway !important;
     font-size: 26px;
     font-weight: 700;
@@ -41,7 +41,7 @@ body{
 }
 .nav__link:hover,
 .nav__link.nav__link--selected{
-    color: $primary-color;
+    color: #2196F3;
 } 
 
 .nav__link::after{
@@ -343,7 +343,7 @@ body{
     flex-direction:column;
 }
 .footer__logo{
-    color: $primary-color;
+    color: #2196F3;
     font-family: Raleway !important;
     font-size: 26px;
     font-weight: 700;
@@ -485,7 +485,6 @@ body{
     margin-top: 106px;
     padding-bottom: 56px;
     justify-content: center;
-    flex-basis: calc((100%-32px)/5);
 }
 .active-button{
     font-family: 'Roboto';
