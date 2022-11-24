@@ -1,10 +1,12 @@
+@import "./utils/variables";
+@import "./components/nav";
+
+
 body{
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    color: $color-text-primary;
+    font-family: $font-family-primary;
+    font-family: $font-family-secondary;
 }
-
-
 .container{
     width: 1200px;
     margin-left: auto;
@@ -13,54 +15,7 @@ body{
 
 /*Navegación a otros sitios*/
 
-.nav{
-    display: inline-flex;
-    padding: 32px;
-    justify-content: flex-start; 
-    align-items: center;
-}
 
-.nav__logo{
-    color: #2196F3;
-    font-family: Raleway !important;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.2;
-    text-decoration: none;
-    margin-right: 93px;
-}
-
-.nav__link{
-    color: #212121;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2;
-    text-decoration: none;
-    margin-right: 50px;
-    position: relative;
-}
-.nav__link:hover,
-.nav__link.nav__link--selected{
-    color: #2196F3;
-} 
-
-.nav__link::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: calc(100% + 35px);
-    width: 100%;
-    height: 4px;
-    background-color:#2196F3;
-    border-radius: 2px;
-    opacity: 0;
-    transition: opacity 250ms;
-}
-
-.nav__link.nav__link--selected::after{
-    color: #2196F3;
-    opacity: 1;
-}
 
 .header__contact{
     display: inline-flex;
@@ -76,7 +31,7 @@ body{
 }
 
 .header__contact-link{
-    color: #212121;
+    color: $color-text-primary;
     margin-right: 30px;
     font-size: 14px;
     line-height: 1.2;
@@ -85,11 +40,11 @@ body{
 }
 
 .header__contact-link:hover{
-    color: #2196F3;
+    color: $primary-color;
 }
 
 .header__contact-link:hover .header__contact-icon{
-    fill: #2196F3;
+    fill: $primary-color;
 }
 
 /*--------------------*/
@@ -129,7 +84,7 @@ body{
 }
 
 .container__h1{
-    color: #FFFFFF;
+    color: $secondary-color;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.4;
@@ -140,9 +95,9 @@ body{
 }
 
 .container__button{
-    color: #FFFFFF;
-    background-color: #2196F3;
-    border: 5px solid #2196F3;
+    color: $secondary-color;
+    background-color: $primary-color;
+    border: 5px solid $primary-color;
     border-radius: 5px;
     font-size: 16px;
     line-height: 1.9;
@@ -183,7 +138,7 @@ body{
 .values__description{
     display: block;
     width: 250px;
-    color: #757575 !important;
+    color: $color-text-secondary !important;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -226,7 +181,7 @@ body{
 .services__devices-text{
     position: absolute;
     bottom: 15px;
-    color: #FFFFFF;
+    color: $secondary-color;
     font-weight: 700;
     font-size: 14px;
     margin-left: 90px;
@@ -236,6 +191,15 @@ body{
 
 .members{
     background-color:#F5F4FA;
+}
+
+.members__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
 }
 .members-section{
     padding-bottom: 94px;
@@ -247,7 +211,7 @@ body{
     box-sizing: border-box;
     width: 270px;
     height: 428px;
-    background: #FFFFFF;
+    background: $secondary-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -256,15 +220,9 @@ body{
     display: block;
 }
 
-.members__title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
-    text-align: center;
-}
 
 .members__position{
-    color: #757575;
+    color: $color-text-secondary;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
@@ -278,15 +236,15 @@ body{
 .members__container-icon {
     display: inline-flex;
     justify-content: center;
-    background:#FFFFFF;
+    background:$secondary-color;
     border-radius: 50px;
     fill: #AFB1B8;
     cursor: pointer;
   }
 
   .members__container-icon:hover {
-    background: #2196F3;
-    fill: #FFFFFF;
+    background: $primary-color;
+    fill: $secondary-color;
   }
 
 /*Clientes Regulares*/
@@ -309,7 +267,7 @@ body{
 .customer__icon {
     display: inline-flex;
     justify-content: center;
-    background:#FFFFFF;
+    background:$secondary-color;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     fill: #AFB1B8;
@@ -317,9 +275,9 @@ body{
   }
 
   .customer__icon:hover {
-    background: #FFFFFF;
-    fill:  #2196F3;
-    border: 1px solid #2196F3;
+    background: $secondary-color;
+    fill:  $primary-color;
+    border: 1px solid $primary-color;
   }
 
 /*Pie de página*/
@@ -343,8 +301,8 @@ body{
     flex-direction:column;
 }
 .footer__logo{
-    color: #2196F3;
-    font-family: Raleway !important;
+    color: $primary-color;
+    font-family: $font-family-secondary !important;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.2;
@@ -356,7 +314,7 @@ body{
     display: block;
     width: 231px;
     margin-top: 6px;
-    color:#FFFFFF;
+    color:$secondary-color;
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
@@ -386,7 +344,7 @@ body{
 .footer__socialmedia{
     align-self: baseline;
     margin-right: 15px;
-    color: #FFFFFF;
+    color: $secondary-color;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -397,13 +355,13 @@ body{
     margin-right: 5px;
     background:rgba(255, 255, 255, 0.1);
     border-radius: 50px;
-    fill: #FFFFFF;
+    fill: $secondary-color;
     cursor: pointer;
   }
 
   .footer__icon:hover {
-    background: #2196F3;
-    fill: #FFFFFF;
+    background: $primary-color;
+    fill: $secondary-color;
   }
 
   .form__subscript{
@@ -424,7 +382,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: $secondary-color;
   }
   
   .form__email-subscript{
@@ -448,7 +406,7 @@ body{
     width: 200px;
     height: 50px;
     padding-top: 10px;
-    background: #2196F3;
+    background: $primary-color;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
@@ -462,7 +420,7 @@ body{
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: $secondary-color;
     display: flex;
     left: 39px;
   }
@@ -480,13 +438,13 @@ body{
 
 /*Contenido único de la página*/
 
-.buttons{
+.portfolio__buttons{
     display: flex;
     margin-top: 106px;
     padding-bottom: 56px;
     justify-content: center;
 }
-.active-button{
+.portfolio__button{
     font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.6;
@@ -497,16 +455,16 @@ body{
     margin-right: 8px;
 }
 
-.active-button:hover{
-    color: #FFFFFF;
-    background-color: #2196F3;
+.portfolio__button:hover{
+    color: $secondary-color;
+    background-color: $primary-color;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Secciones*/
 
-.project-container{
+.project{
     padding: 20px;
     padding-bottom: 90px;
     display: flex;
@@ -514,25 +472,25 @@ body{
     gap: 20px;
 }
 
-.card{
+.project__card{
     box-sizing: border-box;
     width: 370px;
-    background: #FFFFFF;
+    background: $secondary-color;
     border: 1px solid #EEEEEE;
     position: relative;
     }
 
-.card:hover{
+.project__card:hover{
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.card-image{
+.project__card-image{
     position: relative;
     overflow: hidden;
 }
 
-.card-blue{
+.project__card-blue{
     position:absolute;
     top: 0px;
     left: 0px;
@@ -542,7 +500,7 @@ body{
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: $secondary-color;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -554,23 +512,23 @@ body{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card:hover .card-blue{
+.project__card:hover .project__card-blue{
     transform: translateY(0%);
 }
 
-.card-heading{
+.project__card-heading{
     padding-right: 24px;
     padding-left: 24px;
 }
 
-.list-title{
+.project__title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 }
 
-.list-description{
-    color: #757575 !important;
+.project__description{
+    color: $color-text-secondary !important;
     font-size: 16px;
     line-height: 1.9;
 }
@@ -598,7 +556,7 @@ body{
     left: 536px;
     top: 421px;
     padding: 8px 8px;
-    background: #FFFFFF;
+    background: $secondary-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 40px;
@@ -621,7 +579,7 @@ body{
     height: 30px;
     right: 8px;
     top: 6.5px;
-    background: #FFFFFF;
+    background: $secondary-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     cursor: pointer;
@@ -641,7 +599,7 @@ body{
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
-    color: #212121;
+    color: $color-text-primary;
 }
 
 .form__label{
@@ -649,7 +607,7 @@ body{
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: #757575;
+    color: $color-text-secondary;
     line-height: 1.16;
 }
 
@@ -669,7 +627,7 @@ body{
 }
 
 .form__input:hover, .form__input:focus{
-    border: 1px solid #2196F3;
+    border: 1px solid $primary-color;
 }
 
 .form__input-icon{
@@ -682,7 +640,7 @@ body{
 
 .form__input:hover + .form__input-icon, 
 .form__input:focus + .from__input-icon{
-    fill: #2196F3
+    fill: $primary-color
 }
 
 .form__textarea{
@@ -702,7 +660,7 @@ body{
 }
 
 .form__textarea:hover, .form__textarea:focus{
-    border: 1px solid #2196F3;
+    border: 1px solid $primary-color;
 }
 
 .form__checkbox{
@@ -712,7 +670,7 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    color: #757575;
+    color: $color-text-secondary;
     width: 400px;
     height: 24px;
     margin-top: 20px;
@@ -736,7 +694,7 @@ body{
 }
 
 .form__checkbox input[type="checkbox"]:checked + .form__checkmark{
-    background: #2196F3;
+    background: $primary-color;
     border: none;
 }
 
@@ -745,7 +703,7 @@ body{
 }
 
 .form__submit-button{
-    color: #FFFFFF;
+    color: $secondary-color;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
