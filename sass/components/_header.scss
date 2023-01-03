@@ -49,3 +49,33 @@
     color: $primary-color;
     opacity: 1;
 }
+
+.header__contact{
+    display: inline-flex;
+    margin-left: 200px;
+    justify-content: flex-end; 
+    align-items: flex-start;
+
+    &-icon{
+        display: inline-flex;
+        margin-right: 10px;
+        fill: #757575;
+    }
+
+    &-link{
+        color: $color-text-primary;
+        margin-right: 30px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+.header__contact-link:hover{
+    color: $primary-color;
+}
+
+.header__contact-link:hover .header__contact-icon{
+    fill: $primary-color;
+}
