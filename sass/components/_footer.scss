@@ -30,13 +30,7 @@
 .footer{
 
     &__logo{
-        color: $primary-color;
-        font-family: $font-family-secondary !important;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.2;
-        text-decoration: none;
-        margin-right: 93px;
+        @include logo;
     }
 
     &__address{
@@ -81,8 +75,7 @@
         cursor: pointer;
     
         &:hover {
-            background: $primary-color;
-            fill: $secondary-color;
+            @include hovercolor-reverse;
           }
       }
 }

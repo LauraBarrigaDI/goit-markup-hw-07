@@ -1,10 +1,7 @@
+@use "../utils/variables.scss";
+
 .customers{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2px;
-    text-align: center;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    @include title;
 
     &__brands{
         display: flex;
@@ -13,17 +10,16 @@
     }
 
     &__icon {
+        @include socialicon-color;
         display: inline-flex;
         justify-content: center;
-        background:$secondary-color;
         border: 1px solid $color-icon-primary;
         border-radius: 4px;
-        fill: $color-icon-primary;
         cursor: pointer;
 
         &:hover {
+            @include hovercolor;
             background: $secondary-color;
-            fill:  $primary-color;
             border: 1px solid $primary-color;
           }
       }

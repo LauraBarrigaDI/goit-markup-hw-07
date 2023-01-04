@@ -5,13 +5,7 @@
     align-items: center;
 
     &__logo{
-        color: $primary-color;
-        font-family: $font-family-secondary !important;
-        font-size: 26px;
-        font-weight: 700;
-        line-height: 1.2;
-        text-decoration: none;
-        margin-right: 93px;
+        @include logo;
     }
 
     &__link{
@@ -41,11 +35,11 @@
 
 .nav__link:hover,
 .nav__link.nav__link--selected{
-    color: $primary-color;
+    @include hovercolor;
 } 
 
 .nav__link.nav__link--selected::after{
-    color: $primary-color;
+    @include hovercolor;
     opacity: 1;
 }
 
@@ -58,7 +52,7 @@
     &-icon{
         display: inline-flex;
         margin-right: 10px;
-        fill: #757575;
+        fill: $color-text-secondary;
     }
 
     &-link{
@@ -70,11 +64,11 @@
         text-decoration: none;
         
         &:hover{
-            color: $primary-color;
+            @include hovercolor;
         }
 
         &:hover .header__contact-icon{
-            fill: $primary-color;
+            @include hovercolor;
         }
     }
 }

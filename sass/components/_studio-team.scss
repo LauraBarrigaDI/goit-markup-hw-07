@@ -1,13 +1,10 @@
+@use "../utils/variables.scss";
+
 .members{
     background-color:#F5F4FA;
 
     &__title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2px;
-        text-align: center;
-        padding-top: 94px;
-        padding-bottom: 50px;
+        @include title;
     }
 }
 
@@ -51,16 +48,14 @@
     justify-content: center;
 
     &-icon {
+        @include socialicon-color;
         display: inline-flex;
         justify-content: center;
-        background:$secondary-color;
         border-radius: 50px;
-        fill: $color-icon-primary;
         cursor: pointer;
 
         &:hover {
-            background: $primary-color;
-            fill: $secondary-color;
+            @include hovercolor-reverse;
           }
       }
 }
